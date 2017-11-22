@@ -1,0 +1,196 @@
+.welcome-grid{
+   .row{
+      &.one{
+         // height: 500px;
+         .block{
+            height: 500px;
+            @media screen and ($bp-smaller-than-mobile){
+               height: 360px;
+            }
+         }
+      }
+      &.two{
+         // height: 360px;
+         .block{
+            height: 360px;
+            &.img{
+               @media screen and ($bp-smaller-than-mobile){
+                  height: 240px;
+               }
+            }
+            &.text{
+               background-color: $red;
+               text-align: center;
+               padding-top: 55px;
+               @media screen and ($bp-smaller-than-mobile){
+                  height: auto;
+                  padding: 40px 20px;
+               }
+               p{
+                  font-family: $houseslant;
+                  font-size: 4.8rem;
+                  line-height: 5.8rem;
+                  color: $white;
+                  max-width: 400px;
+                  margin: 0 auto;
+                  @media screen and ($bp-smaller-than-mobile){
+                     font-size: 3rem;
+                     line-height: normal;
+                  }
+               }
+            }
+         }
+      }
+   }
+   .img.block{
+      background-position: center;
+      background-size: cover;
+      &.title{
+         padding: 190px 0;
+         text-align: center;
+         @media screen and ($bp-smaller-than-mobile){
+            padding: 140px 0;
+         }
+         svg{
+            display: inline-block;
+            height: 145px;
+            @media screen and ($bp-smaller-than-desktop){
+               height: auto;
+               width: 80%;
+            }
+         }
+      }
+   }
+}
+
+.panel{
+   @media screen and ($bp-smaller-than-tablet){
+      padding-right: 20px;
+      padding-left: 20px;
+   }
+   &.text{
+      background-color: $green;
+      color: $white;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background-position: center;
+      background-size: cover;
+      @media screen and ($bp-smaller-than-desktophd){
+         padding-left: 20px;
+         padding-right: 20px;
+      }
+      &.list{
+         background-position: right top;
+         text-align: center;
+         ul{
+            list-style-type: none;
+            margin: 0;
+         }
+         li{
+            font-family: $houseslant;
+            font-size: 3.6rem;
+            margin-bottom: 10px;
+            list-style-type: none;
+            &:last-of-type{
+               margin: 0;
+            }
+         }
+      }
+      h4{
+         color: $white;
+         font-family: $houseslant;
+         margin: 0;
+         font-size: 7.2rem;
+         line-height: 8.2rem;
+         @media screen and ($bp-smaller-than-tablet){
+            font-size: 4rem;
+            line-height: normal;
+            margin-bottom: 20px;
+         }
+      }
+   }
+   &.parallax{
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      h4{
+         color: $white;
+         text-shadow: -2px -2px 0px black;
+      }
+   }
+   &.page-title{
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      h1{
+         color: $white;
+         text-shadow: -2px -2px 0px black;
+         margin: 0;
+         font-size: 8rem;
+      }
+   }
+   &.email{
+      padding: 40px;
+      p{
+         color: $white;
+      }
+      .email-bg{
+         background-color: $red;
+         padding: 20px;
+         form{
+            border-bottom: 4px solid $white;
+            display: inline-block;
+            input[type="text"]{
+               background: transparent;
+               display: inline-block;
+               border: 0px;
+               color: $white;
+            }
+            input[type="submit"]{
+               display: inline-block;
+               border: 0px;
+               height: 44px;
+               width: 44px;
+               background-image: url('http://localhost:8888/fcmarket/wp-content/themes/fcmarket/img/ic_keyboard_arrow_right_24px.svg');
+               background-size: contain;
+               background-position: center;
+            }
+         }
+      }
+   }
+   &.callout{
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      h4{
+         font-family: $houseslant;
+         color: $green;
+         margin: 0;
+      }
+      &.parallax{
+         h4{
+            color: $white;
+         }
+      }
+   }
+}
+
+main.page{
+   padding: 40px 0;
+   overflow-x: hidden;
+   @media screen and ($bp-smaller-than-desktophd){
+      padding: 40px 20px;
+   }
+   h1, h2{
+      font-size: 3.6rem;
+      color: $teal;
+      line-height: 4.2rem;
+   }
+   h3{
+      color: $darkgreen;
+   }
+   h5, h6{
+      font-weight: 700;
+   }
+}

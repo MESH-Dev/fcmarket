@@ -13,11 +13,16 @@ $bp-smaller-than-desktop : "max-width: 1060px" !default;
 $bp-smaller-than-tablet : "max-width: 750px" !default;
 $bp-smaller-than-mobile : "max-width: 480px" !default;
 $bp-smaller-than-phablet   : "max-width: 550px" !default;
+$bp-smaller-than-desktophd : "max-width: 1200px" !default;
 
 // Colors
-$red: #a42126 !default;
+$red: #FF4338 !default;
 $white: #FFFFFF !default;
 $black: #000000 !default;
+$darkgreen: #43695B !default;
+$green: #00C18B !default;
+$yellow: #F3C85F !default;
+$teal: #7DA4DD !default;
 
 
 //Fonts

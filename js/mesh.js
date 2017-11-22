@@ -1,7 +1,6 @@
 jQuery(document).ready(function($){
 
-  //Are we loaded?
-  console.log('New theme loaded!');
+   $('.parallax').parallax("50%", 0.5);
 
   //Let's do something awesome!
 

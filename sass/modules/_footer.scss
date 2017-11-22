@@ -1,0 +1,17 @@
+footer{
+   background-color: $yellow;
+   text-align: center;
+   padding: 40px 0;
+   svg{
+      margin-bottom: 10px;
+      &.logo{
+         height: 62px;
+      }
+   }
+   p{
+      margin: 0;
+      a{
+         color: $white;
+      }
+   }
+}

@@ -1,25 +1,24 @@
 <?php get_header(); ?>
-
-<main id="content">
+<div class="panel parallax page-title" style="background-image:url('http://localhost:8888/fcmarket/wp-content/themes/fcmarket/img/bg2.jpg')">
+	<h1><?php the_title(); ?></h1>
+</div>
+<main class="page" id="content">
 
 	<div class="container">
 		<div class="row">
-			<div class="columns-9">
+			<div class="columns-12">
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
-					<h1><?php the_title(); ?></h1>
 
 					<?php the_content(); ?>
 
 				<?php endwhile; ?>
 			</div>
 
-			<div class="columns-3">
+			<!-- <div class="columns-3">
 
-				<!-- Change this to repeater of custom fields -->
 
-				<?php get_sidebar(); ?>
-			</div>
+				<//?php get_sidebar(); ?>
+			</div> -->
 
 		</div>
 	</div>
