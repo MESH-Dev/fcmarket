@@ -1,5 +1,6 @@
 .head-nav{
    height: 82px;
+   position: relative;
    @media screen and ($bp-smaller-than-desktophd){
       padding-left: 20px;
       padding-right: 20px;
@@ -27,27 +28,116 @@
       margin: 0;
       overflow-x: scroll;
    }
+   &.js{
+      @media screen and (max-width: 610px){
+         display: none;
+         float: none;
+         margin: auto;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         background-color: $white;
+         width: 100%;
+      }
+      &.open{
+         ul{
+            white-space: normal;
+            li{
+               display: block;
+               margin: 0px;
+               &.menu-item-has-children{
+                  > a{
+                     &::after{
+                        content: ' +';
+                     }
+                  }
+                  &:hover{
+                     ul.sub-menu{
+                        display: none;
+                     }
+                  }
+               }
+               a{
+                  line-height: 44px;
+                  display: inline-block;
+               }
+            }
+         }
+      }
+   }
    ul{
       list-style-type: none;
       margin: 0;
       @media screen and (max-width: 610px){
          white-space: nowrap;
       }
+      &.sub-menu{
+         position: absolute;
+         top: 100%;
+         left: -25%;
+         padding: 8px 0;
+         display: none;
+         @media screen and (max-width: 610px){
+            position: relative;
+            top: auto;
+            left: auto;
+            padding: inherit;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+         }
+         li{
+            background-color: $white;
+            padding: 0 20px;
+            margin: 0px;
+            display: block;
+            a{
+               line-height: 36px;
+            }
+            &:first-of-type{
+               padding-top: 10px;
+            }
+            &:last-of-type{
+               padding-bottom: 10px;
+            }
+         }
+      }
       li{
+         position: relative;
          margin: 0;
          display: inline-block;
          list-style-type: none;
          font-family: $houseslant;
          color: $darkgreen;
-         line-height: 82px;
          font-size: 1.8rem;
-         margin-left: 20px;
+         padding: 0 10px;
+         &.menu-item-has-children{
+            &:hover{
+               ul.sub-menu{
+                  display: block;
+               }
+            }
+         }
          a{
+            display: inline-block;
+            line-height: 82px;
             color: $darkgreen;
             &:hover{
                text-decoration: none;
             }
          }
+      }
+   }
+}
+
+#menu-trigger{
+   display: none;
+   font-size: 2.4rem;
+   color: $darkgreen;
+   font-family: $houseslant;
+   line-height: 44px;
+   &.js{
+      @media screen and (max-width: 610px){
+         display: block;
       }
    }
 }
