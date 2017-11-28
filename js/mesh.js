@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
 
    $('.main-navigation, #menu-trigger').addClass('js');
 
-   $('.parallax').parallax("50%", 0.5);
+   $('.parallax').parallax("0%", 0.2);
 
    $('#menu-trigger').click(function(){
       $('.main-navigation').slideToggle().addClass('open');
