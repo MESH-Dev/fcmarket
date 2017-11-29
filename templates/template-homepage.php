@@ -5,7 +5,7 @@ get_header(''); ?>
 <main id="content">
    <div class="welcome-grid">
       <div class="row one">
-         <div class="columns-6 title img block" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/bg2.jpg');">
+         <div class="columns-6 title img block" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/bg2small.jpg');">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387 113.54">
               <title>Flatbush Caton Market Logo</title>
               <g id="title-anim" style="isolation: isolate">
