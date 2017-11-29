@@ -5,7 +5,7 @@ get_header(''); ?>
 <main id="content">
    <div class="welcome-grid">
       <div class="row one">
-         <div class="columns-6 title img block" style="background-image:url('http://localhost:8888/fcmarket/wp-content/themes/fcmarket/img/bg2.jpg');">
+         <div class="columns-6 title img block" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/bg2.jpg');">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387 113.54">
               <title>Flatbush Caton Market Logo</title>
               <g style="isolation: isolate">
@@ -86,12 +86,12 @@ get_header(''); ?>
               </g>
             </svg>
          </div>
-         <div class="columns-6 img block" style="background-image:url('http://localhost:8888/fcmarket/wp-content/themes/fcmarket/img/flatbushP_final_9.jpg');">
+         <div class="columns-6 img block" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/flatbushP_final_9.jpg');">
 
          </div>
       </div>
       <div class="row two">
-         <div class="columns-5 img block" style="background-image:url('http://localhost:8888/fcmarket/wp-content/themes/fcmarket/img/flatbushP_final_9.jpg');">
+         <div class="columns-5 img block" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/flatbushP_final_9.jpg');">
 
          </div>
          <div class="columns-7 text block">
@@ -104,7 +104,7 @@ get_header(''); ?>
          <h4>Open Monday thru Friday 10am to 6pm</h4>
       </div>
    </div>
-   <div class="text panel" style="background-image:url('http://localhost:8888/fcmarket/wp-content/themes/fcmarket/img/bg4.jpg')">
+   <div class="text panel" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/bg4.jpg')">
       <div class="container">
          <div class="row">
             <div class="columns-6">
@@ -119,12 +119,12 @@ Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod sem
          </div>
       </div>
    </div>
-   <div class="parallax callout panel" style="background-image:url('http://localhost:8888/fcmarket/wp-content/themes/fcmarket/img/bg2.jpg')">
+   <div class="parallax callout panel" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/bg2.jpg')">
       <div class="container">
          <h4>In the Market</h4>
       </div>
    </div>
-   <div class="text panel list" style="background-image:url('http://localhost:8888/fcmarket/wp-content/themes/fcmarket/img/bg3.jpg')">
+   <div class="text panel list" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/bg3.jpg')">
       <div class="container">
          <ul>
             <li>Beauty and Haircare</li>
@@ -136,7 +136,7 @@ Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod sem
          </ul>
       </div>
    </div>
-   <div class="parallax panel email" style="background-image:url('http://localhost:8888/fcmarket/wp-content/themes/fcmarket/img/bg2.jpg')">
+   <div class="parallax panel email" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/bg2.jpg')">
       <div class="container">
          <div class="row email-bg">
             <div class="columns-4">
