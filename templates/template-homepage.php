@@ -119,7 +119,7 @@ Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod sem
          </div>
       </div>
    </div>
-   <div class="parallax callout panel" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/bg2.jpg')">
+   <div class="parallax callout panel" data-bleed="80" data-parallax="scroll" data-image-src='<?php bloginfo('template_directory'); ?>/img/bg2.jpg'>
       <div class="container">
          <h4>In the Market</h4>
       </div>
@@ -136,7 +136,8 @@ Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod sem
          </ul>
       </div>
    </div>
-   <div class="parallax panel email" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/bg2.jpg')">
+   <div class="parallax panel email" data-bleed="80" data-parallax="scroll" data-image-src='<?php bloginfo('template_directory'); ?>/img/bg2.jpg'>
+      <!-- style="background-image:url('<//?php bloginfo('template_directory'); ?>/img/bg2.jpg')" -->
       <div class="container">
          <div class="row email-bg">
             <div class="columns-4">

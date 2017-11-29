@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="panel parallax page-title" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/bg2.jpg')">
+<div class="panel parallax page-title" data-bleed="80" data-parallax="scroll" data-image-src='<?php bloginfo('template_directory'); ?>/img/bg2.jpg'>
 	<h1><?php the_title(); ?></h1>
 </div>
 <main class="page" id="content">

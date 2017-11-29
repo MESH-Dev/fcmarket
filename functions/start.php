@@ -7,7 +7,8 @@
 //enqueue scripts and styles *use production assets. Dev assets are located in  /css and /js
 function loadup_scripts() {
 	wp_enqueue_script( 'theme-js', get_template_directory_uri().'/js/mesh.js', array('jquery'), '1.0.0', true );
-	wp_enqueue_script( 'parallax', get_template_directory_uri().'/js/jquery.parallax-1.1.3.js', array('jquery'), '1.0.0', true );
+	// wp_enqueue_script( 'parallax', get_template_directory_uri().'/js/jquery.parallax-1.1.3.js', array('jquery'), '1.0.0', true );
+	wp_enqueue_script( 'parallax', get_template_directory_uri().'/js/parallax.min.js', array('jquery'), '1.0.0', true );
 	wp_enqueue_style( 'typekit', 'https://use.typekit.net/mvt4sul.css', '1.0.0', true );
 	wp_enqueue_style( 'gfonts', 'https://fonts.googleapis.com/css?family=Work+Sans:400,700', '1.0.0', true );
 }
