@@ -9,7 +9,7 @@ header{
       padding-left: 20px;
       padding-right: 20px;
    }
-   @media screen and (max-width: 610px){
+   @media screen and (max-width: 658px){
       height: auto;
       text-align: center;
    }
@@ -20,20 +20,32 @@ header{
          margin-top: 15px;
       }
    }
+   .socials{
+      margin-left: 10px;
+      float: right;
+      @media screen and (max-width: 658px){
+         display: none;
+      }
+   }
+   i.fa{
+      font-size: 2rem;
+      line-height: 82px;
+      color: #FFC656;
+   }
 }
 
 .main-navigation{
    display: inline-block;
    float: right;
    margin: 0 auto;
-   @media screen and (max-width: 610px){
+   @media screen and (max-width: 658px){
       display: block;
       float: none;
       margin: 0;
       overflow-x: scroll;
    }
    &.js{
-      @media screen and (max-width: 610px){
+      @media screen and (max-width: 658px){
          display: none;
          float: none;
          margin: auto;
@@ -72,7 +84,7 @@ header{
    ul{
       list-style-type: none;
       margin: 0;
-      @media screen and (max-width: 610px){
+      @media screen and (max-width: 658px){
          white-space: nowrap;
       }
       &.sub-menu{
@@ -81,7 +93,7 @@ header{
          left: -25%;
          padding: 8px 0;
          display: none;
-         @media screen and (max-width: 610px){
+         @media screen and (max-width: 658px){
             position: relative;
             top: auto;
             left: auto;
@@ -140,7 +152,7 @@ header{
    font-family: $houseslant;
    line-height: 44px;
    &.js{
-      @media screen and (max-width: 610px){
+      @media screen and (max-width: 658px){
          display: block;
       }
    }

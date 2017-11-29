@@ -8,7 +8,7 @@ get_header(''); ?>
          <div class="columns-6 title img block" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/bg2.jpg');">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387 113.54">
               <title>Flatbush Caton Market Logo</title>
-              <g style="isolation: isolate">
+              <g id="title-anim" style="isolation: isolate">
                 <g data-name="Layer 1">
                   <g style="mix-blend-mode: multiply">
                     <path d="M39,146.72s14.38-3.09,16.15-2.85a2.41,2.41,0,0,1,2,1.09,7.38,7.38,0,0,1,.19,1.84c.08.42-.49.84-.46,1.23,0,.63.61,1.18.34,1.5-.44.52-17,3.54-17,3.54l-2.69,7.47s8.08-.92,9.4-.72,1.84.34,1.77.76-.42.88-.31,1.41a14.58,14.58,0,0,1,0,3.79l-13.92,1.75s-3.34,11.09-3.82,12.18a5.52,5.52,0,0,1-1.93,2.53,20.76,20.76,0,0,1-4.7-.12,3.2,3.2,0,0,1-1.73-3.18c.37-1.16,4.95-11.73,4.95-11.73a.72.72,0,0,0-.64-.49.84.84,0,0,1-.69-.75c0-1.93,2.65-3.38,2.65-3.38l2.81-7.75s-1.48-.65-1.72-1.73-.2-3.3.52-3.86A16.28,16.28,0,0,1,33.67,148s.57-2,1.69-2.5,2.17-.88,2.86-.16A3.09,3.09,0,0,1,39,146.72Z" transform="translate(-22.2 -143.85)" style="fill: #3f605e"/>
@@ -86,7 +86,7 @@ get_header(''); ?>
               </g>
             </svg>
          </div>
-         <div class="columns-6 img block" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/flatbushP_final_9.jpg');">
+         <div class="columns-6 img block" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/flatbushP_final_8.jpg');">
 
          </div>
       </div>
@@ -95,13 +95,13 @@ get_header(''); ?>
 
          </div>
          <div class="columns-7 text block">
-            <p>this event is happening next to the king's theatre on december 10th</p>
+            <p id="landing-text-anim">this event is happening next to the king's theatre on december 10th</p>
          </div>
       </div>
    </div>
    <div class="callout panel">
       <div class="container">
-         <h4>Open Monday thru Friday 10am to 6pm</h4>
+         <h4>Open Monday through Saturday 10am to 8pm</h4>
       </div>
    </div>
    <div class="text panel" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/bg4.jpg')">
@@ -130,9 +130,11 @@ Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod sem
             <li>Beauty and Haircare</li>
             <li>Fashion</li>
             <li>Dry Foods and Spices</li>
-            <li>Cafés and Lounge</li>
+            <li>Café and Juice Bar</li>
             <li>Home Goods</li>
             <li>Accessories</li>
+            <li>Lounge</li>
+            <li>Dr. Una S. T. Clarke Business Lab</li>
          </ul>
       </div>
    </div>
@@ -142,7 +144,7 @@ Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod sem
          <div class="row email-bg">
             <div class="columns-4">
                <h4>Sign Up!</h4>
-               <p>Stay in the know about FCM.</p>
+               <p>Stay in the know about Flatbush Caton Market</p>
             </div>
             <div class="columns-8">
                <form class="" action="" method="post">
