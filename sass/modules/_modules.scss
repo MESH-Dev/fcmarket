@@ -83,6 +83,7 @@
          padding-right: 20px;
       }
       &.list{
+         background-color: $yellow;
          background-position: right top;
          text-align: center;
          ul{
@@ -147,12 +148,18 @@
             padding: 40px 20px;
          }
          form{
-            border-bottom: 4px solid $white;
             display: inline-block;
             width: 100%;
             position: relative;
             margin-top: 15px;
-            input[type="text"]{
+            div.above-response{
+               border-bottom: 4px solid $white;
+               position: relative;
+            }
+            .mc4wp-response{
+               margin-top: 10px;
+            }
+            input[type="text"], input[type="email"]{
                background: transparent;
                display: inline-block;
                border: 0px;

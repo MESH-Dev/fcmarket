@@ -86,59 +86,91 @@ get_header(''); ?>
               </g>
             </svg>
          </div>
-         <div class="columns-6 img block" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/flatbushP_final_8.jpg');">
+         <?php
+         $panel1_fields = get_field('first_img_panel');
+         $panel1_rand = array_rand($panel1_fields[0]);
+         $panel1_url = $panel1_fields[0][$panel1_rand]["sizes"]['medium_large'];
+         ?>
+         <div class="columns-6 img block" style="background-image:url('<?php echo $panel1_url; ?>');">
 
          </div>
       </div>
       <div class="row two">
-         <div class="columns-5 img block" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/flatbushP_final_9.jpg');">
+         <?php
+         $panel2_image = get_field('second_img_panel');
+         $panel2_url = $panel2_image['sizes']["medium_large"];
+         ?>
+         <div class="columns-5 img block" style="background-image:url('<?php echo $panel2_url; ?>');">
 
          </div>
          <div class="columns-7 text block">
-            <p id="landing-text-anim">this event is happening next to the king's theatre on december 10th</p>
+            <p id="landing-text-anim"><?php the_field('welcome_callout'); ?></p>
          </div>
       </div>
    </div>
    <div class="callout panel">
       <div class="container">
-         <h4>Open Monday through Saturday 10am to 8pm</h4>
+         <h4><?php the_field('white_callout_bar'); ?></h4>
       </div>
    </div>
-   <div class="text panel" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/bg4.jpg')">
+   <?php
+   $greeting_bg = get_field('greeting_panel_bg');
+   // echo '<pre>';
+   // 	var_dump( $greeting_bg );
+   // echo '</pre>';
+   $greeting_bg_url = $greeting_bg['sizes']["background-fullscreen"];
+   ?>
+   <div class="text panel" style="background-image:url('<?php echo $greeting_bg_url; ?>')">
       <div class="container">
          <div class="row">
             <div class="columns-6">
-               <h4>Flatbush Caton Market was founded in 2000.</h4>
+               <h4><?php the_field('greeting_panel_title'); ?></h4>
             </div>
             <div class="columns-6">
-               <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.<br><br>
-Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-
-<!-- Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p> -->
+               <p><?php the_field('greeting_panel_text'); ?></p>
             </div>
          </div>
       </div>
    </div>
-   <div class="parallax callout panel" data-bleed="80" data-parallax="scroll" data-image-src='<?php bloginfo('template_directory'); ?>/img/bg2.jpg'>
+   <?php
+   $title_bg_image = get_field('list_title_bg');
+   // echo '<pre>';
+   // 	var_dump( $title_bg_image );
+   // echo '</pre>';
+   $title_bg_url = $title_bg_image['sizes']["background-fullscreen"];
+   ?>
+   <div class="parallax callout panel" data-bleed="80" data-parallax="scroll" data-image-src='<?php echo $title_bg_url; ?>'>
       <div class="container">
-         <h4>In the Market</h4>
+         <h4><?php the_field('list_section_title'); ?></h4>
       </div>
    </div>
-   <div class="text panel list" style="background-image:url('<?php bloginfo('template_directory'); ?>/img/bg3.jpg')">
+   <?php
+   $list_bg = get_field('list_section_bg');
+   $list_bg_url = $list_bg['sizes']["background-fullscreen"];
+   ?>
+   <div class="text panel list" style="background-image:url('<?php echo $list_bg_url; ?>')">
       <div class="container">
          <ul>
-            <li>Beauty and Haircare</li>
-            <li>Fashion</li>
+            <?php if( have_rows('list_section_items')):
+               while(have_rows('list_section_items')): the_row();
+            ?>
+            <li><?php the_sub_field('list_item_text'); ?></li>
+            <!-- <li>Fashion</li>
             <li>Dry Foods and Spices</li>
             <li>Café and Juice Bar</li>
             <li>Home Goods</li>
             <li>Accessories</li>
             <li>Lounge</li>
-            <li>Dr. Una S. T. Clarke Business Lab</li>
+            <li>Dr. Una S. T. Clarke Business Lab</li> -->
+         <?php endwhile; endif; ?>
          </ul>
       </div>
    </div>
-   <div class="parallax panel email" data-bleed="80" data-parallax="scroll" data-image-src='<?php bloginfo('template_directory'); ?>/img/bg2.jpg'>
+   <?php
+   $email_bg_image = get_field('email_section_bg');
+   $email_bg_url = $email_bg_image['sizes']["background-fullscreen"];
+   ?>
+   <div class="parallax panel email" data-bleed="80" data-parallax="scroll" data-image-src='<?php echo $email_bg_url; ?>'>
       <!-- style="background-image:url('<//?php bloginfo('template_directory'); ?>/img/bg2.jpg')" -->
       <div class="container">
          <div class="row email-bg">
@@ -147,10 +179,10 @@ Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod sem
                <p>Stay in the know about Flatbush Caton Market</p>
             </div>
             <div class="columns-8">
-               <form class="" action="" method="post">
-                  <input type="text" name="email" value="" placeholder="Email">
-                  <input type="submit" name="email" value="">
-               </form>
+               <?php
+                  $shortcode = get_field('e-mail_signup_shortcode');
+                  echo do_shortcode($shortcode);
+               ?>
             </div>
          </div>
       </div>

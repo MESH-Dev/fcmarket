@@ -1135,26 +1135,27 @@ footer p a {
 }
 /* line 85, sass/modules/_modules.scss */
 .panel.text.list {
+  background-color: #F3C85F;
   background-position: right top;
   text-align: center;
 }
-/* line 88, sass/modules/_modules.scss */
+/* line 89, sass/modules/_modules.scss */
 .panel.text.list ul {
   list-style-type: none;
   margin: 0;
 }
-/* line 92, sass/modules/_modules.scss */
+/* line 93, sass/modules/_modules.scss */
 .panel.text.list li {
   font-family: "house-slant", sans-serif;
   font-size: 3.6rem;
   margin-bottom: 10px;
   list-style-type: none;
 }
-/* line 97, sass/modules/_modules.scss */
+/* line 98, sass/modules/_modules.scss */
 .panel.text.list li:last-of-type {
   margin: 0;
 }
-/* line 102, sass/modules/_modules.scss */
+/* line 103, sass/modules/_modules.scss */
 .panel.text h4 {
   color: #FFFFFF;
   font-family: "house-slant", sans-serif;
@@ -1162,69 +1163,77 @@ footer p a {
   line-height: 8.2rem;
 }
 @media screen and (max-width: 750px) {
-  /* line 102, sass/modules/_modules.scss */
+  /* line 103, sass/modules/_modules.scss */
   .panel.text h4 {
     font-size: 4rem;
     line-height: normal;
     margin-bottom: 20px;
   }
 }
-/* line 114, sass/modules/_modules.scss */
+/* line 115, sass/modules/_modules.scss */
 .panel.parallax {
   background-size: cover;
   background-position: center;
 }
-/* line 119, sass/modules/_modules.scss */
+/* line 120, sass/modules/_modules.scss */
 .panel.parallax h4 {
   color: #FFFFFF;
   text-shadow: -2px -2px 0px black;
 }
-/* line 124, sass/modules/_modules.scss */
+/* line 125, sass/modules/_modules.scss */
 .panel.page-title {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-/* line 128, sass/modules/_modules.scss */
+/* line 129, sass/modules/_modules.scss */
 .panel.page-title h1 {
   color: #FFFFFF;
   text-shadow: -2px -2px 0px black;
   margin: 0;
   font-size: 8rem;
 }
-/* line 135, sass/modules/_modules.scss */
+/* line 136, sass/modules/_modules.scss */
 .panel.email {
   padding: 40px;
 }
-/* line 137, sass/modules/_modules.scss */
+/* line 138, sass/modules/_modules.scss */
 .panel.email p {
   color: #FFFFFF;
 }
-/* line 140, sass/modules/_modules.scss */
+/* line 141, sass/modules/_modules.scss */
 .panel.email h4 {
   text-shadow: none;
 }
-/* line 143, sass/modules/_modules.scss */
+/* line 144, sass/modules/_modules.scss */
 .panel.email .email-bg {
   background-color: #FF4338;
   padding: 40px 60px;
 }
 @media screen and (max-width: 480px) {
-  /* line 143, sass/modules/_modules.scss */
+  /* line 144, sass/modules/_modules.scss */
   .panel.email .email-bg {
     padding: 40px 20px;
   }
 }
-/* line 149, sass/modules/_modules.scss */
+/* line 150, sass/modules/_modules.scss */
 .panel.email .email-bg form {
-  border-bottom: 4px solid #FFFFFF;
   display: inline-block;
   width: 100%;
   position: relative;
   margin-top: 15px;
 }
 /* line 155, sass/modules/_modules.scss */
-.panel.email .email-bg form input[type="text"] {
+.panel.email .email-bg form div.above-response {
+  border-bottom: 4px solid #FFFFFF;
+  position: relative;
+}
+/* line 159, sass/modules/_modules.scss */
+.panel.email .email-bg form .mc4wp-response {
+  margin-top: 10px;
+}
+/* line 162, sass/modules/_modules.scss */
+.panel.email .email-bg form input[type="text"], .panel.email .email-bg form input[type="email"] {
   background: transparent;
   display: inline-block;
   border: 0px;
@@ -1232,37 +1241,37 @@ footer p a {
   width: 90%;
   font-size: 1.8rem;
 }
-/* line 162, sass/modules/_modules.scss */
-.panel.email .email-bg form input[type="text"]::placeholder {
+/* line 169, sass/modules/_modules.scss */
+.panel.email .email-bg form input[type="text"]::placeholder, .panel.email .email-bg form input[type="email"]::placeholder {
   color: #FFFFFF;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
 }
-/* line 167, sass/modules/_modules.scss */
-.panel.email .email-bg form input[type="text"]::-webkit-input-placeholder {
+/* line 174, sass/modules/_modules.scss */
+.panel.email .email-bg form input[type="text"]::-webkit-input-placeholder, .panel.email .email-bg form input[type="email"]::-webkit-input-placeholder {
   color: #FFFFFF;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
 }
-/* line 172, sass/modules/_modules.scss */
-.panel.email .email-bg form input[type="text"]::-moz-placeholder {
+/* line 179, sass/modules/_modules.scss */
+.panel.email .email-bg form input[type="text"]::-moz-placeholder, .panel.email .email-bg form input[type="email"]::-moz-placeholder {
   color: #FFFFFF;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
 }
-/* line 177, sass/modules/_modules.scss */
-.panel.email .email-bg form input[type="text"]:-ms-input-placeholder {
+/* line 184, sass/modules/_modules.scss */
+.panel.email .email-bg form input[type="text"]:-ms-input-placeholder, .panel.email .email-bg form input[type="email"]:-ms-input-placeholder {
   color: #FFFFFF;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
 }
-/* line 182, sass/modules/_modules.scss */
-.panel.email .email-bg form input[type="text"]:-moz-placeholder {
+/* line 189, sass/modules/_modules.scss */
+.panel.email .email-bg form input[type="text"]:-moz-placeholder, .panel.email .email-bg form input[type="email"]:-moz-placeholder {
   color: #FFFFFF;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
 }
-/* line 188, sass/modules/_modules.scss */
+/* line 195, sass/modules/_modules.scss */
 .panel.email .email-bg form input[type="submit"] {
   display: inline-block;
   border: 0px;
@@ -1276,48 +1285,48 @@ footer p a {
   right: 0;
   bottom: 2px;
 }
-/* line 204, sass/modules/_modules.scss */
+/* line 211, sass/modules/_modules.scss */
 .panel.callout {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 208, sass/modules/_modules.scss */
+/* line 215, sass/modules/_modules.scss */
 .panel.callout h4 {
   font-size: 4.8rem;
   font-family: "house-slant", sans-serif;
   color: #00C18B;
 }
-/* line 214, sass/modules/_modules.scss */
+/* line 221, sass/modules/_modules.scss */
 .panel.callout.parallax h4 {
   font-size: 6.4rem;
   letter-spacing: 0.46px;
   color: #FFFFFF;
 }
 
-/* line 223, sass/modules/_modules.scss */
+/* line 230, sass/modules/_modules.scss */
 main.page {
   padding: 40px 0;
   overflow-x: hidden;
   background-color: #FFFFFF;
 }
 @media screen and (max-width: 1200px) {
-  /* line 223, sass/modules/_modules.scss */
+  /* line 230, sass/modules/_modules.scss */
   main.page {
     padding: 40px 20px;
   }
 }
-/* line 230, sass/modules/_modules.scss */
+/* line 237, sass/modules/_modules.scss */
 main.page h1, main.page h2 {
   font-size: 3.6rem;
   color: #7DA4DD;
   line-height: 4.2rem;
 }
-/* line 235, sass/modules/_modules.scss */
+/* line 242, sass/modules/_modules.scss */
 main.page h3 {
   color: #43695B;
 }
-/* line 238, sass/modules/_modules.scss */
+/* line 245, sass/modules/_modules.scss */
 main.page h5, main.page h6 {
   font-weight: 700;
 }
