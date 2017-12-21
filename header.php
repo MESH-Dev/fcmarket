@@ -42,25 +42,6 @@
 						<a href="<?php echo home_url(); ?>">
 						<!-- <h1 class="site-title"><a href="<//?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><//?php bloginfo( 'name' ); ?></a></h1> -->
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387 113.54">
-							  <defs>
-							    <style>
-							      .cls-1 {
-							        isolation: isolate;
-							      }
-
-							      .cls-2 {
-							        mix-blend-mode: multiply;
-							      }
-
-							      .cls-3 {
-							        fill: #3f605e;
-							      }
-
-							      .cls-4 {
-							        fill: #1fc399;
-							      }
-							    </style>
-							  </defs>
 							  <title>Flatbush Caton Market Logo</title>
 							  <g class="cls-1">
 							    <g data-name="Layer 1">

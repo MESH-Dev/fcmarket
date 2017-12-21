@@ -227,7 +227,7 @@
    }
 }
 
-main.page{
+main.page, main.main404{
    padding: 40px 0;
    overflow-x: hidden;
    background-color: $white;
@@ -244,5 +244,36 @@ main.page{
    }
    h5, h6{
       font-weight: 700;
+   }
+}
+
+.error404{
+   .search-form{
+      display: block;
+      font-family: $worksans;
+      label{
+         display: inline-block;
+      }
+      input[type="submit"]{
+         display: inline-block;
+      }
+   }
+}
+
+svg{
+   .cls-1 {
+    isolation: isolate;
+   }
+
+   .cls-2 {
+    mix-blend-mode: multiply;
+   }
+
+   .cls-3 {
+    fill: #3f605e;
+   }
+
+   .cls-4 {
+    fill: #1fc399;
    }
 }
