@@ -42,25 +42,6 @@
 						<a href="<?php echo home_url(); ?>">
 						<!-- <h1 class="site-title"><a href="<//?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><//?php bloginfo( 'name' ); ?></a></h1> -->
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387 113.54">
-							  <defs>
-							    <style>
-							      .cls-1 {
-							        isolation: isolate;
-							      }
-
-							      .cls-2 {
-							        mix-blend-mode: multiply;
-							      }
-
-							      .cls-3 {
-							        fill: #3f605e;
-							      }
-
-							      .cls-4 {
-							        fill: #1fc399;
-							      }
-							    </style>
-							  </defs>
 							  <title>Flatbush Caton Market Logo</title>
 							  <g class="cls-1">
 							    <g data-name="Layer 1">
@@ -141,40 +122,8 @@
 							</svg>
 						</a>
 					</div>
-					<!-- <div class="socials">
-						<a href="">
-							<svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								 <title>Facebook</title>
-								 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-									  <g fill-rule="nonzero">
-											<circle id="Oval" fill="#3B5998" cx="60" cy="60" r="60"></circle>
-											<circle id="Oval" fill="#3B5998" cx="60" cy="60" r="60"></circle>
-											<circle id="Oval" fill="#FFFFFF" cx="60" cy="60" r="55"></circle>
-											<path d="M60,0 C26.9,0 0,26.9 0,60 C0,93.1 26.9,120 60,120 C93.1,120 120,93.1 120,60 C120,26.9 93.1,0 60,0 Z M76.5,36.7 L67.8,36.7 C66.4,36.7 64.4,37.4 64.4,40.5 L64.4,48.6 L76.5,48.6 L75.1,62.4 L64.4,62.4 L64.4,101.6 L48.2,101.6 L48.2,62.4 L40.5,62.4 L40.5,48.6 L48.2,48.6 L48.2,39.7 C48.2,33.3 51.2,23.3 64.6,23.3 L76.6,23.4 L76.6,36.7 L76.5,36.7 Z" id="Shape" fill="#FFC656"></path>
-									  </g>
-								 </g>
-							</svg>
-						</a>
-						<a href="">
-							<svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								 <title>Instagram</title>
-								 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-									  <g fill-rule="nonzero">
-											<circle id="Oval" fill="#B53088" cx="60" cy="60" r="60"></circle>
-											<circle id="Oval" fill="#B53088" cx="60" cy="60" r="60"></circle>
-											<circle id="Oval" fill="#FFFFFF" cx="60" cy="60" r="55"></circle>
-											<g id="Group" fill="#FFC656">
-												 <path d="M77.9,31.9 L42.1,31.9 C36.4,31.9 31.7,36.5 31.7,42.3 L31.7,78 C31.7,83.7 36.3,88.4 42.1,88.4 L77.9,88.4 C83.6,88.4 88.3,83.8 88.3,78 L88.3,42.3 C88.2,36.6 83.6,31.9 77.9,31.9 Z M60,78.8 C49.8,78.8 41.4,70.5 41.4,60.2 C41.4,50 49.7,41.6 60,41.6 C70.3,41.6 78.6,49.9 78.6,60.2 C78.6,70.4 70.2,78.8 60,78.8 Z M79.2,45.4 C76.8,45.4 74.8,43.4 74.8,41 C74.8,38.6 76.8,36.6 79.2,36.6 C81.6,36.6 83.6,38.6 83.6,41 C83.6,43.4 81.6,45.4 79.2,45.4 Z" id="Shape"></path>
-												 <path d="M60,49.4 C54.1,49.4 49.3,54.2 49.3,60.1 C49.3,66 54.1,70.8 60,70.8 C65.9,70.8 70.7,66 70.7,60.1 C70.7,54.2 65.9,49.4 60,49.4 Z" id="Shape"></path>
-												 <path d="M60,0 C26.9,0 0,26.9 0,60 C0,93.1 26.9,120 60,120 C93.1,120 120,93.1 120,60 C120,26.9 93.1,0 60,0 Z M96.1,78 C96.1,88 87.9,96.2 77.9,96.2 L42.1,96.2 C32.1,96.2 23.9,88 23.9,78 L23.9,42.3 C23.9,32.3 32.1,24.1 42.1,24.1 L77.9,24.1 C87.9,24.1 96.1,32.3 96.1,42.3 L96.1,78 Z" id="Shape"></path>
-											</g>
-									  </g>
-								 </g>
-							</svg>
-						</a>
-					</div> -->
-					<a class="socials" href="#"><i class="fa fa-instagram"></i></a>
-					<a class="socials" href="#"><i class="fa fa-facebook"></i></a>
+					<a class="socials" href="https://www.instagram.com/flatbushcatonmarket/"><i class="fa fa-instagram"></i></a>
+					<a class="socials" href="https://www.facebook.com/flatbushcatonmarket"><i class="fa fa-facebook"></i></a>
 					<nav class="main-navigation">
 						<?php if(has_nav_menu('main_nav')){
 									$defaults = array(
