@@ -5,9 +5,6 @@
 	<div class="container">
 		<div class="row">
 			<div class="columns-12">
-				<!-- <nav class="main-navigation">
-					<//?php wp_nav_menu( array('menu_id' => 'footer-menu', 'theme_location' => 'footer-menu') ); ?>
-				</nav> -->
             <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387 113.54">
               <title>Flatbush Caton Market Logo</title>
               <g style="isolation: isolate">
@@ -87,8 +84,15 @@
                 </g>
               </g>
             </svg>
-				<p>Site by <a href="http://meshfresh.com" target="_blank">MESH</a></p>
-			</div><!-- End of Footer -->
+			</div>
+		</div>
+		<div class="credits-row row">
+			<div class="columns-6">
+				<p class="copyright">Copyright &copy; <?php echo date('Y'); ?> Flatbush Caton Market. All rights reserved.</p>
+			</div>
+			<div class="columns-6">
+				<p class="signature">Site by <a href="http://meshfresh.com" target="_blank">MESH</a></p>
+			</div>
 		</div>
 	</div>
 

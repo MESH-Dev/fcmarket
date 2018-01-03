@@ -14,4 +14,26 @@ footer{
          color: $white;
       }
    }
+   .credits-row{
+      @media screen and ($bp-smaller-than-desktophd){
+         padding-left: 20px;
+         padding-right: 20px;
+      }
+      p{
+         font-size: 1.2rem;
+         margin-bottom: 1rem;
+      }
+      p.signature{
+         float: right;
+         @media screen and ($bp-smaller-than-tablet){
+            float: none;
+         }
+      }
+      p.copyright{
+         float: left;
+         @media screen and ($bp-smaller-than-tablet){
+            float: none;
+         }
+      }
+   }
 }
