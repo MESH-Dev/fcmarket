@@ -1072,30 +1072,33 @@ footer .credits-row p.copyright {
     height: 360px;
   }
 }
-/* line 14, sass/modules/_modules.scss */
-.welcome-grid .row.two .block {
-  height: 360px;
-}
-@media screen and (max-width: 480px) {
-  /* line 16, sass/modules/_modules.scss */
-  .welcome-grid .row.two .block.img {
-    height: 240px;
+@media screen and (min-width: 750px) {
+  /* line 14, sass/modules/_modules.scss */
+  .welcome-grid .row.two .block {
+    min-height: 360px;
   }
 }
-/* line 21, sass/modules/_modules.scss */
+@media screen and (max-width: 480px) {
+  /* line 19, sass/modules/_modules.scss */
+  .welcome-grid .row.two .block.img {
+    height: 240px !important;
+  }
+}
+/* line 24, sass/modules/_modules.scss */
 .welcome-grid .row.two .block.text {
   background-color: #FF2B1E;
   text-align: center;
   padding-top: 55px;
+  padding-bottom: 55px;
 }
 @media screen and (max-width: 480px) {
-  /* line 21, sass/modules/_modules.scss */
+  /* line 24, sass/modules/_modules.scss */
   .welcome-grid .row.two .block.text {
     height: auto;
     padding: 40px 20px;
   }
 }
-/* line 29, sass/modules/_modules.scss */
+/* line 33, sass/modules/_modules.scss */
 .welcome-grid .row.two .block.text p {
   font-family: "house-slant", sans-serif;
   font-size: 4.8rem;
@@ -1106,54 +1109,54 @@ footer .credits-row p.copyright {
   margin: 0 auto;
 }
 @media screen and (max-width: 480px) {
-  /* line 29, sass/modules/_modules.scss */
+  /* line 33, sass/modules/_modules.scss */
   .welcome-grid .row.two .block.text p {
     font-size: 3rem;
     line-height: normal;
     letter-spacing: 0.15rem;
   }
 }
-/* line 47, sass/modules/_modules.scss */
+/* line 51, sass/modules/_modules.scss */
 .welcome-grid .img.block {
   background-position: center;
   background-size: cover;
 }
-/* line 50, sass/modules/_modules.scss */
+/* line 54, sass/modules/_modules.scss */
 .welcome-grid .img.block.title {
   padding: 190px 0;
   text-align: center;
 }
 @media screen and (max-width: 480px) {
-  /* line 50, sass/modules/_modules.scss */
+  /* line 54, sass/modules/_modules.scss */
   .welcome-grid .img.block.title {
     padding: 140px 0;
   }
 }
-/* line 56, sass/modules/_modules.scss */
+/* line 60, sass/modules/_modules.scss */
 .welcome-grid .img.block.title svg {
   display: inline-block;
   height: 145px;
 }
 @media screen and (max-width: 1060px) {
-  /* line 56, sass/modules/_modules.scss */
+  /* line 60, sass/modules/_modules.scss */
   .welcome-grid .img.block.title svg {
     height: auto;
     width: 80%;
   }
 }
 
-/* line 69, sass/modules/_modules.scss */
+/* line 73, sass/modules/_modules.scss */
 .panel h4 {
   margin: 0;
 }
 @media screen and (max-width: 750px) {
-  /* line 68, sass/modules/_modules.scss */
+  /* line 72, sass/modules/_modules.scss */
   .panel {
     padding-right: 20px;
     padding-left: 20px;
   }
 }
-/* line 76, sass/modules/_modules.scss */
+/* line 80, sass/modules/_modules.scss */
 .panel.text {
   background-color: #00C18B;
   color: #FFFFFF;
@@ -1163,24 +1166,24 @@ footer .credits-row p.copyright {
   background-size: cover;
 }
 @media screen and (max-width: 1200px) {
-  /* line 76, sass/modules/_modules.scss */
+  /* line 80, sass/modules/_modules.scss */
   .panel.text {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-/* line 87, sass/modules/_modules.scss */
+/* line 91, sass/modules/_modules.scss */
 .panel.text.list {
   background-color: #F3C85F;
   background-position: right top;
   text-align: center;
 }
-/* line 91, sass/modules/_modules.scss */
+/* line 95, sass/modules/_modules.scss */
 .panel.text.list ul {
   list-style-type: none;
   margin: 0;
 }
-/* line 95, sass/modules/_modules.scss */
+/* line 99, sass/modules/_modules.scss */
 .panel.text.list li {
   font-family: "house-slant", sans-serif;
   font-size: 3.6rem;
@@ -1188,11 +1191,11 @@ footer .credits-row p.copyright {
   letter-spacing: 0.24rem;
   list-style-type: none;
 }
-/* line 101, sass/modules/_modules.scss */
+/* line 105, sass/modules/_modules.scss */
 .panel.text.list li:last-of-type {
   margin: 0;
 }
-/* line 106, sass/modules/_modules.scss */
+/* line 110, sass/modules/_modules.scss */
 .panel.text h4 {
   color: #FFFFFF;
   font-family: "house-slant", sans-serif;
@@ -1201,7 +1204,7 @@ footer .credits-row p.copyright {
   letter-spacing: 0.35rem;
 }
 @media screen and (max-width: 750px) {
-  /* line 106, sass/modules/_modules.scss */
+  /* line 110, sass/modules/_modules.scss */
   .panel.text h4 {
     font-size: 4rem;
     line-height: normal;
@@ -1209,69 +1212,76 @@ footer .credits-row p.copyright {
     letter-spacing: 0.3rem;
   }
 }
-/* line 120, sass/modules/_modules.scss */
+/* line 124, sass/modules/_modules.scss */
 .panel.parallax {
   background-size: cover;
   background-position: center;
 }
-/* line 125, sass/modules/_modules.scss */
+/* line 129, sass/modules/_modules.scss */
 .panel.parallax h4 {
   color: #FFFFFF;
   text-shadow: -2px -2px 0px black;
 }
-/* line 130, sass/modules/_modules.scss */
+/* line 134, sass/modules/_modules.scss */
 .panel.page-title {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+  overflow: hidden;
 }
-/* line 134, sass/modules/_modules.scss */
+/* line 139, sass/modules/_modules.scss */
 .panel.page-title h1 {
   color: #FFFFFF;
   text-shadow: 2px 2px 0px black;
   margin: 0;
   font-size: 8rem;
 }
-/* line 141, sass/modules/_modules.scss */
+@media screen and (max-width: 750px) {
+  /* line 139, sass/modules/_modules.scss */
+  .panel.page-title h1 {
+    font-size: 5rem;
+  }
+}
+/* line 149, sass/modules/_modules.scss */
 .panel.email {
   padding: 40px;
 }
-/* line 143, sass/modules/_modules.scss */
+/* line 151, sass/modules/_modules.scss */
 .panel.email p {
   color: #FFFFFF;
 }
-/* line 146, sass/modules/_modules.scss */
+/* line 154, sass/modules/_modules.scss */
 .panel.email h4 {
   text-shadow: none;
 }
-/* line 149, sass/modules/_modules.scss */
+/* line 157, sass/modules/_modules.scss */
 .panel.email .email-bg {
   background-color: #FF2B1E;
   padding: 40px 60px;
 }
 @media screen and (max-width: 480px) {
-  /* line 149, sass/modules/_modules.scss */
+  /* line 157, sass/modules/_modules.scss */
   .panel.email .email-bg {
     padding: 40px 20px;
   }
 }
-/* line 155, sass/modules/_modules.scss */
+/* line 163, sass/modules/_modules.scss */
 .panel.email .email-bg form {
   display: inline-block;
   width: 100%;
   position: relative;
   margin-top: 15px;
 }
-/* line 160, sass/modules/_modules.scss */
+/* line 168, sass/modules/_modules.scss */
 .panel.email .email-bg form div.above-response {
   border-bottom: 4px solid #FFFFFF;
   position: relative;
 }
-/* line 164, sass/modules/_modules.scss */
+/* line 172, sass/modules/_modules.scss */
 .panel.email .email-bg form .mc4wp-response {
   margin-top: 10px;
 }
-/* line 167, sass/modules/_modules.scss */
+/* line 175, sass/modules/_modules.scss */
 .panel.email .email-bg form input[type="text"], .panel.email .email-bg form input[type="email"] {
   background: transparent;
   display: inline-block;
@@ -1280,37 +1290,37 @@ footer .credits-row p.copyright {
   width: 90%;
   font-size: 1.8rem;
 }
-/* line 174, sass/modules/_modules.scss */
+/* line 182, sass/modules/_modules.scss */
 .panel.email .email-bg form input[type="text"]::placeholder, .panel.email .email-bg form input[type="email"]::placeholder {
   color: #FFFFFF;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
 }
-/* line 179, sass/modules/_modules.scss */
+/* line 187, sass/modules/_modules.scss */
 .panel.email .email-bg form input[type="text"]::-webkit-input-placeholder, .panel.email .email-bg form input[type="email"]::-webkit-input-placeholder {
   color: #FFFFFF;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
 }
-/* line 184, sass/modules/_modules.scss */
+/* line 192, sass/modules/_modules.scss */
 .panel.email .email-bg form input[type="text"]::-moz-placeholder, .panel.email .email-bg form input[type="email"]::-moz-placeholder {
   color: #FFFFFF;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
 }
-/* line 189, sass/modules/_modules.scss */
+/* line 197, sass/modules/_modules.scss */
 .panel.email .email-bg form input[type="text"]:-ms-input-placeholder, .panel.email .email-bg form input[type="email"]:-ms-input-placeholder {
   color: #FFFFFF;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
 }
-/* line 194, sass/modules/_modules.scss */
+/* line 202, sass/modules/_modules.scss */
 .panel.email .email-bg form input[type="text"]:-moz-placeholder, .panel.email .email-bg form input[type="email"]:-moz-placeholder {
   color: #FFFFFF;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
 }
-/* line 200, sass/modules/_modules.scss */
+/* line 208, sass/modules/_modules.scss */
 .panel.email .email-bg form input[type="submit"] {
   display: inline-block;
   border: 0px;
@@ -1324,136 +1334,140 @@ footer .credits-row p.copyright {
   right: 0;
   bottom: 2px;
 }
-/* line 216, sass/modules/_modules.scss */
+/* line 224, sass/modules/_modules.scss */
 .panel.callout {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
 }
-/* line 220, sass/modules/_modules.scss */
+/* line 227, sass/modules/_modules.scss */
 .panel.callout h4 {
   font-size: 4.8rem;
   font-family: "house-slant", sans-serif;
   color: #00C18B;
   letter-spacing: 0.25rem;
 }
-/* line 227, sass/modules/_modules.scss */
+/* line 234, sass/modules/_modules.scss */
 .panel.callout.parallax h4 {
   font-size: 6.4rem;
-  letter-spacing: 0.46px;
+  letter-spacing: 3px;
   color: #FFFFFF;
 }
 
-/* line 236, sass/modules/_modules.scss */
+/* line 243, sass/modules/_modules.scss */
 main.page, main.main404 {
   padding: 40px 0;
   overflow-x: hidden;
   background-color: #FFFFFF;
 }
 @media screen and (max-width: 1200px) {
-  /* line 236, sass/modules/_modules.scss */
+  /* line 243, sass/modules/_modules.scss */
   main.page, main.main404 {
     padding: 40px 20px;
   }
 }
-/* line 243, sass/modules/_modules.scss */
+/* line 250, sass/modules/_modules.scss */
 main.page h1, main.main404 h1 {
   font-family: "bebas-neue", sans-serif;
   color: #43695B;
   letter-spacing: 0.6rem;
 }
-/* line 248, sass/modules/_modules.scss */
+/* line 255, sass/modules/_modules.scss */
 main.page h2, main.main404 h2 {
   font-family: "house-slant", sans-serif;
   font-size: 3.6rem;
   line-height: 4.2rem;
   color: #7DA4DD;
 }
-/* line 254, sass/modules/_modules.scss */
+/* line 261, sass/modules/_modules.scss */
 main.page h3, main.main404 h3 {
   font-family: "bebas-neue", sans-serif;
   color: #00C18B;
   letter-spacing: 0.4rem;
 }
-/* line 259, sass/modules/_modules.scss */
+/* line 266, sass/modules/_modules.scss */
 main.page h4, main.main404 h4 {
   color: #EC5244;
 }
-/* line 262, sass/modules/_modules.scss */
+/* line 269, sass/modules/_modules.scss */
 main.page h5, main.page h6, main.main404 h5, main.main404 h6 {
   font-family: "house-slant", sans-serif;
 }
-/* line 265, sass/modules/_modules.scss */
+/* line 272, sass/modules/_modules.scss */
 main.page h5, main.main404 h5 {
   color: #00C18B;
 }
-/* line 268, sass/modules/_modules.scss */
+/* line 275, sass/modules/_modules.scss */
 main.page h6, main.main404 h6 {
   color: #43695B;
 }
-/* line 271, sass/modules/_modules.scss */
+/* line 278, sass/modules/_modules.scss */
 main.page a, main.main404 a {
   color: #7DA4DD;
   font-weight: 700;
 }
 
-/* line 277, sass/modules/_modules.scss */
+/* line 284, sass/modules/_modules.scss */
 .text-column {
   overflow: hidden;
 }
-/* line 279, sass/modules/_modules.scss */
+/* line 286, sass/modules/_modules.scss */
 .text-column h1 {
   margin-bottom: 1rem;
 }
-/* line 282, sass/modules/_modules.scss */
+/* line 289, sass/modules/_modules.scss */
 .text-column h2, .text-column h3 {
   margin-bottom: 0.5rem;
 }
-/* line 285, sass/modules/_modules.scss */
+/* line 292, sass/modules/_modules.scss */
 .text-column h4, .text-column h5, .text-column h6 {
   margin-bottom: 0.35rem;
 }
-/* line 288, sass/modules/_modules.scss */
+/* line 295, sass/modules/_modules.scss */
 .text-column p {
   margin-bottom: 0.5rem;
 }
+/* line 298, sass/modules/_modules.scss */
+.text-column img {
+  max-width: 100%;
+  height: auto;
+}
 
-/* line 293, sass/modules/_modules.scss */
+/* line 304, sass/modules/_modules.scss */
 .dynamic-row {
   margin-bottom: 40px;
 }
-/* line 295, sass/modules/_modules.scss */
+/* line 306, sass/modules/_modules.scss */
 .dynamic-row:last-of-type {
   margin-bottom: 0px;
 }
 
-/* line 301, sass/modules/_modules.scss */
+/* line 312, sass/modules/_modules.scss */
 .error404 .search-form {
   display: block;
   font-family: "Work Sans", sans-serif;
 }
-/* line 304, sass/modules/_modules.scss */
+/* line 315, sass/modules/_modules.scss */
 .error404 .search-form label {
   display: inline-block;
 }
-/* line 307, sass/modules/_modules.scss */
+/* line 318, sass/modules/_modules.scss */
 .error404 .search-form input[type="submit"] {
   display: inline-block;
 }
 
-/* line 314, sass/modules/_modules.scss */
+/* line 325, sass/modules/_modules.scss */
 svg .cls-1 {
   isolation: isolate;
 }
-/* line 318, sass/modules/_modules.scss */
+/* line 329, sass/modules/_modules.scss */
 svg .cls-2 {
   mix-blend-mode: multiply;
 }
-/* line 322, sass/modules/_modules.scss */
+/* line 333, sass/modules/_modules.scss */
 svg .cls-3 {
   fill: #3f605e;
 }
-/* line 326, sass/modules/_modules.scss */
+/* line 337, sass/modules/_modules.scss */
 svg .cls-4 {
   fill: #1fc399;
 }
