@@ -1432,42 +1432,44 @@ main.page a, main.main404 a {
   height: auto;
 }
 
-/* line 304, sass/modules/_modules.scss */
-.dynamic-row {
-  margin-bottom: 40px;
+@media screen and (min-width: 750px) {
+  /* line 304, sass/modules/_modules.scss */
+  .dynamic-row {
+    margin-bottom: 40px;
+  }
 }
-/* line 306, sass/modules/_modules.scss */
+/* line 308, sass/modules/_modules.scss */
 .dynamic-row:last-of-type {
   margin-bottom: 0px;
 }
 
-/* line 312, sass/modules/_modules.scss */
+/* line 314, sass/modules/_modules.scss */
 .error404 .search-form {
   display: block;
   font-family: "Work Sans", sans-serif;
 }
-/* line 315, sass/modules/_modules.scss */
+/* line 317, sass/modules/_modules.scss */
 .error404 .search-form label {
   display: inline-block;
 }
-/* line 318, sass/modules/_modules.scss */
+/* line 320, sass/modules/_modules.scss */
 .error404 .search-form input[type="submit"] {
   display: inline-block;
 }
 
-/* line 325, sass/modules/_modules.scss */
+/* line 327, sass/modules/_modules.scss */
 svg .cls-1 {
   isolation: isolate;
 }
-/* line 329, sass/modules/_modules.scss */
+/* line 331, sass/modules/_modules.scss */
 svg .cls-2 {
   mix-blend-mode: multiply;
 }
-/* line 333, sass/modules/_modules.scss */
+/* line 335, sass/modules/_modules.scss */
 svg .cls-3 {
   fill: #3f605e;
 }
-/* line 337, sass/modules/_modules.scss */
+/* line 339, sass/modules/_modules.scss */
 svg .cls-4 {
   fill: #1fc399;
 }
