@@ -2,6 +2,9 @@ jQuery(document).ready(function($){
 
    $('.main-navigation, #menu-trigger').addClass('js');
 
+   var pH = $('.row.two .text.block').outerHeight();
+   $('.row.two .img.block').outerHeight(pH);
+
    // $('.parallax').parallax("0%", 0.2);
 
    $('#menu-trigger').click(function(){
