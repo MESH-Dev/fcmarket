@@ -14,12 +14,12 @@ $banner_url = $banner_image['url'];
 	<div class="container">
 		<div class="row">
 			<div class="columns-12">
+				<?php
+					$callout = get_field('page_callout');
+					if($callout != ''){
+				?>
 				<h2 class="page-callout"><?php the_field('page_callout'); ?></h2>
-				<!-- <//?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
-					<//?php the_content(); ?>
-
-				<//?php endwhile; ?> -->
+				<?php } ?>
 			</div>
 		</div>
 			<?php
