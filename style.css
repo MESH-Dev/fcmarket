@@ -990,9 +990,11 @@ header {
 /* line 140, sass/modules/_header.scss */
 .main-navigation ul li a:hover {
   text-decoration: none;
+  opacity: 0.75;
+  transition: opacity 0.25s ease-in-out;
 }
 
-/* line 148, sass/modules/_header.scss */
+/* line 150, sass/modules/_header.scss */
 #menu-trigger {
   display: none;
   font-size: 2.4rem;
@@ -1001,7 +1003,7 @@ header {
   line-height: 44px;
 }
 @media screen and (max-width: 658px) {
-  /* line 154, sass/modules/_header.scss */
+  /* line 156, sass/modules/_header.scss */
   #menu-trigger.js {
     display: block;
   }
