@@ -12,10 +12,10 @@
       &.two{
          // height: 360px;
          .block{
-            // height: 360px;
-            @media screen and ($bp-larger-than-tablet){
-               min-height: 360px;
-            }
+            height: 360px;
+            // @media screen and ($bp-larger-than-tablet){
+            //    min-height: 360px;
+            // }
             &.img{
                @media screen and ($bp-smaller-than-mobile){
                   height: 240px !important;
