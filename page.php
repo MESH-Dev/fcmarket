@@ -4,7 +4,7 @@ $banner_image = get_field('banner_image');
 // echo '<pre>';
 // 	var_dump( $banner_image );
 // echo '</pre>';
-$banner_url = $banner_image['url'];
+$banner_url = $banner_image['sizes']['background-fullscreen'];
 ?>
 <div class="panel parallax page-title" data-bleed="80" data-parallax="scroll" data-image-src='<?php echo $banner_url; ?>'>
 	<h1><?php the_title(); ?></h1>

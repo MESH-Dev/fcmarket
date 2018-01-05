@@ -1358,6 +1358,7 @@ main.page, main.main404 {
   padding: 40px 0;
   overflow-x: hidden;
   background-color: #FFFFFF;
+  min-height: 600px;
 }
 @media screen and (max-width: 1200px) {
   /* line 243, sass/modules/_modules.scss */
@@ -1365,111 +1366,111 @@ main.page, main.main404 {
     padding: 40px 20px;
   }
 }
-/* line 250, sass/modules/_modules.scss */
+/* line 251, sass/modules/_modules.scss */
 main.page h1, main.main404 h1 {
   font-family: "bebas-neue", sans-serif;
   color: #43695B;
   letter-spacing: 0.6rem;
 }
-/* line 255, sass/modules/_modules.scss */
+/* line 256, sass/modules/_modules.scss */
 main.page h2, main.main404 h2 {
   font-family: "house-slant", sans-serif;
   font-size: 3.6rem;
   line-height: 4.2rem;
   color: #7DA4DD;
 }
-/* line 261, sass/modules/_modules.scss */
+/* line 262, sass/modules/_modules.scss */
 main.page h3, main.main404 h3 {
   font-family: "bebas-neue", sans-serif;
   color: #00C18B;
   letter-spacing: 0.4rem;
 }
-/* line 266, sass/modules/_modules.scss */
+/* line 267, sass/modules/_modules.scss */
 main.page h4, main.main404 h4 {
   color: #EC5244;
 }
-/* line 269, sass/modules/_modules.scss */
+/* line 270, sass/modules/_modules.scss */
 main.page h5, main.page h6, main.main404 h5, main.main404 h6 {
   font-family: "house-slant", sans-serif;
 }
-/* line 272, sass/modules/_modules.scss */
+/* line 273, sass/modules/_modules.scss */
 main.page h5, main.main404 h5 {
   color: #00C18B;
 }
-/* line 275, sass/modules/_modules.scss */
+/* line 276, sass/modules/_modules.scss */
 main.page h6, main.main404 h6 {
   color: #43695B;
 }
-/* line 278, sass/modules/_modules.scss */
+/* line 279, sass/modules/_modules.scss */
 main.page a, main.main404 a {
   color: #7DA4DD;
   font-weight: 700;
 }
 
-/* line 284, sass/modules/_modules.scss */
+/* line 285, sass/modules/_modules.scss */
 .text-column {
   overflow: hidden;
 }
-/* line 286, sass/modules/_modules.scss */
+/* line 287, sass/modules/_modules.scss */
 .text-column h1 {
   margin-bottom: 1rem;
 }
-/* line 289, sass/modules/_modules.scss */
+/* line 290, sass/modules/_modules.scss */
 .text-column h2, .text-column h3 {
   margin-bottom: 0.5rem;
 }
-/* line 292, sass/modules/_modules.scss */
+/* line 293, sass/modules/_modules.scss */
 .text-column h4, .text-column h5, .text-column h6 {
   margin-bottom: 0.35rem;
 }
-/* line 295, sass/modules/_modules.scss */
+/* line 296, sass/modules/_modules.scss */
 .text-column p {
   margin-bottom: 0.5rem;
 }
-/* line 298, sass/modules/_modules.scss */
+/* line 299, sass/modules/_modules.scss */
 .text-column img {
   max-width: 100%;
   height: auto;
 }
 
 @media screen and (min-width: 750px) {
-  /* line 304, sass/modules/_modules.scss */
+  /* line 305, sass/modules/_modules.scss */
   .dynamic-row {
     margin-bottom: 40px;
   }
 }
-/* line 308, sass/modules/_modules.scss */
+/* line 309, sass/modules/_modules.scss */
 .dynamic-row:last-of-type {
   margin-bottom: 0px;
 }
 
-/* line 314, sass/modules/_modules.scss */
+/* line 315, sass/modules/_modules.scss */
 .error404 .search-form {
   display: block;
   font-family: "Work Sans", sans-serif;
 }
-/* line 317, sass/modules/_modules.scss */
+/* line 318, sass/modules/_modules.scss */
 .error404 .search-form label {
   display: inline-block;
 }
-/* line 320, sass/modules/_modules.scss */
+/* line 321, sass/modules/_modules.scss */
 .error404 .search-form input[type="submit"] {
   display: inline-block;
 }
 
-/* line 327, sass/modules/_modules.scss */
+/* line 328, sass/modules/_modules.scss */
 svg .cls-1 {
   isolation: isolate;
 }
-/* line 331, sass/modules/_modules.scss */
+/* line 332, sass/modules/_modules.scss */
 svg .cls-2 {
   mix-blend-mode: multiply;
 }
-/* line 335, sass/modules/_modules.scss */
+/* line 336, sass/modules/_modules.scss */
 svg .cls-3 {
   fill: #3f605e;
 }
-/* line 339, sass/modules/_modules.scss */
+/* line 340, sass/modules/_modules.scss */
 svg .cls-4 {
   fill: #1fc399;
 }
