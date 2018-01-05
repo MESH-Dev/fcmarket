@@ -1074,11 +1074,9 @@ footer .credits-row p.copyright {
     height: 360px;
   }
 }
-@media screen and (min-width: 750px) {
-  /* line 14, sass/modules/_modules.scss */
-  .welcome-grid .row.two .block {
-    min-height: 360px;
-  }
+/* line 14, sass/modules/_modules.scss */
+.welcome-grid .row.two .block {
+  height: 360px;
 }
 @media screen and (max-width: 480px) {
   /* line 19, sass/modules/_modules.scss */
