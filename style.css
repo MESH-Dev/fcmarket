@@ -1458,19 +1458,24 @@ main.page a, main.main404 a {
   display: inline-block;
 }
 
-/* line 328, sass/modules/_modules.scss */
+/* line 327, sass/modules/_modules.scss */
+.sr-only {
+  display: none;
+}
+
+/* line 332, sass/modules/_modules.scss */
 svg .cls-1 {
   isolation: isolate;
 }
-/* line 332, sass/modules/_modules.scss */
+/* line 336, sass/modules/_modules.scss */
 svg .cls-2 {
   mix-blend-mode: multiply;
 }
-/* line 336, sass/modules/_modules.scss */
+/* line 340, sass/modules/_modules.scss */
 svg .cls-3 {
   fill: #3f605e;
 }
-/* line 340, sass/modules/_modules.scss */
+/* line 344, sass/modules/_modules.scss */
 svg .cls-4 {
   fill: #1fc399;
 }

@@ -324,6 +324,10 @@ main.page, main.main404{
    }
 }
 
+.sr-only{
+   display: none;
+}
+
 svg{
    .cls-1 {
     isolation: isolate;
