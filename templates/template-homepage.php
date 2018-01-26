@@ -97,8 +97,9 @@ get_header(''); ?>
       </div>
       <div class="row two">
          <?php
-         $panel2_image = get_field('second_img_panel');
-         $panel2_url = $panel2_image['sizes']["medium_large"];
+         $panel2_fields = get_field('second_img_panel');
+         $panel2_rand = array_rand($panel2_fields[0]);
+         $panel2_url = $panel2_fields[0][$panel2_rand]["sizes"]['medium_large'];
          ?>
          <div class="columns-5 img block" style="background-image:url('<?php echo $panel2_url; ?>');">
 

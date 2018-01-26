@@ -1011,7 +1011,7 @@ header {
 
 /* line 1, sass/modules/_footer.scss */
 footer {
-  background-color: #F3C85F;
+  background-color: #56BE91;
   text-align: center;
   padding: 40px 0;
 }
@@ -1086,7 +1086,7 @@ footer .credits-row p.copyright {
 }
 /* line 24, sass/modules/_modules.scss */
 .welcome-grid .row.two .block.text {
-  background-color: #FF2B1E;
+  background-color: #56BE91;
   text-align: center;
   padding-top: 55px;
   padding-bottom: 55px;
